@@ -1,0 +1,21 @@
+@import "tailwindcss";
+
+body {
+  font-family: 'Vazir FD',sans-serif;
+  background-color: #f5f9fd;
+  color: #001445;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 100vh;
+  direction: rtl;
+}
+
+.border{
+  @apply border border-black/10;
+}
+
+input,textarea{
+  @apply w-full text-sm bg-transparent border border-black/10 rounded-lg p-2 focus:outline-none focus:border-black/30 transition-colors duration-200;
+}
